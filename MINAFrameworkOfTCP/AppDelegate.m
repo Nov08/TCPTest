@@ -17,6 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [SingletonTCP sharedInstance].socketHost = BASEHOST;// host设定
+    [SingletonTCP sharedInstance].socketPort = BASEPORT;// port设定
+    
+    // 在连接前先进行手动断开
+    [SingletonTCP sharedInstance].socket.userData = SocketOfflineByUser;
+    [[SingletonTCP sharedInstance] cutOffSocket];
+    
+    // 确保断开后再连，如果对一个正处于连接状态的socket进行连接，会出现崩溃
+    [SingletonTCP sharedInstance].socket.userData = SocketOfflineByServer;
+    [[SingletonTCP sharedInstance] socketConnectHost];
+    
     return YES;
 }
 
