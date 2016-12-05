@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  MINAFrameworkOfTCP
+//
+//  Created by lccx on 2016/12/5.
+//  Copyright © 2016年 lccx. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#define LRString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define MyLog(FORMAT, ...) fprintf(stderr,"第%d行 (所在文件: %s) => %s\n", __LINE__, [LRString UTF8String], [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define MyLog(...)
+#endif
+
+#define BASEHOST @"192.168.1.105"
+#define BASEPORT 60000
+#define TIMEOUT 30
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "SingletonTCP.h"
+#import "NSString+JsonString.h"
+
+#endif /* PrefixHeader_pch */

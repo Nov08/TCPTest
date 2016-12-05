@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A298EB1BB42A1D513ECAA4F /* libPods-MINAFrameworkOfTCP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC137D37A638878EACDB2B9D /* libPods-MINAFrameworkOfTCP.a */; };
 		F8877F951DF50FAC008AF751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8877F941DF50FAC008AF751 /* main.m */; };
 		F8877F981DF50FAC008AF751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8877F971DF50FAC008AF751 /* AppDelegate.m */; };
 		F8877F9B1DF50FAC008AF751 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8877F9A1DF50FAC008AF751 /* ViewController.m */; };
 		F8877F9E1DF50FAC008AF751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8877F9C1DF50FAC008AF751 /* Main.storyboard */; };
 		F8877FA01DF50FAC008AF751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8877F9F1DF50FAC008AF751 /* Assets.xcassets */; };
 		F8877FA31DF50FAC008AF751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8877FA11DF50FAC008AF751 /* LaunchScreen.storyboard */; };
+		F8877FAC1DF510FB008AF751 /* podFile in Resources */ = {isa = PBXBuildFile; fileRef = F8877FAB1DF510FB008AF751 /* podFile */; };
+		F8877FAF1DF51738008AF751 /* SingletonTCP.m in Sources */ = {isa = PBXBuildFile; fileRef = F8877FAE1DF51738008AF751 /* SingletonTCP.m */; };
+		F8877FB21DF540C4008AF751 /* NSString+JsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = F8877FB11DF540C4008AF751 /* NSString+JsonString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B73536C69CFBFF05F6B9E41 /* Pods-MINAFrameworkOfTCP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINAFrameworkOfTCP.release.xcconfig"; path = "Pods/Target Support Files/Pods-MINAFrameworkOfTCP/Pods-MINAFrameworkOfTCP.release.xcconfig"; sourceTree = "<group>"; };
+		9B340C92B28F445BF5BAEF88 /* Pods-MINAFrameworkOfTCP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINAFrameworkOfTCP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MINAFrameworkOfTCP/Pods-MINAFrameworkOfTCP.debug.xcconfig"; sourceTree = "<group>"; };
+		CC137D37A638878EACDB2B9D /* libPods-MINAFrameworkOfTCP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MINAFrameworkOfTCP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8877F901DF50FAC008AF751 /* MINAFrameworkOfTCP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MINAFrameworkOfTCP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8877F941DF50FAC008AF751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8877F961DF50FAC008AF751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,12 @@
 		F8877F9F1DF50FAC008AF751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8877FA21DF50FAC008AF751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8877FA41DF50FAC008AF751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8877FAA1DF51062008AF751 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F8877FAB1DF510FB008AF751 /* podFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podFile; sourceTree = "<group>"; };
+		F8877FAD1DF51738008AF751 /* SingletonTCP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonTCP.h; sourceTree = "<group>"; };
+		F8877FAE1DF51738008AF751 /* SingletonTCP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonTCP.m; sourceTree = "<group>"; };
+		F8877FB01DF540C4008AF751 /* NSString+JsonString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JsonString.h"; sourceTree = "<group>"; };
+		F8877FB11DF540C4008AF751 /* NSString+JsonString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JsonString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +46,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A298EB1BB42A1D513ECAA4F /* libPods-MINAFrameworkOfTCP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1010CD0934F6604B6D39FFC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC137D37A638878EACDB2B9D /* libPods-MINAFrameworkOfTCP.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACDE69609D31C1E3726F47F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B340C92B28F445BF5BAEF88 /* Pods-MINAFrameworkOfTCP.debug.xcconfig */,
+				0B73536C69CFBFF05F6B9E41 /* Pods-MINAFrameworkOfTCP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8877F871DF50FAC008AF751 = {
 			isa = PBXGroup;
 			children = (
+				F8877FAB1DF510FB008AF751 /* podFile */,
 				F8877F921DF50FAC008AF751 /* MINAFrameworkOfTCP */,
 				F8877F911DF50FAC008AF751 /* Products */,
+				ACDE69609D31C1E3726F47F0 /* Pods */,
+				1010CD0934F6604B6D39FFC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +92,20 @@
 		F8877F921DF50FAC008AF751 /* MINAFrameworkOfTCP */ = {
 			isa = PBXGroup;
 			children = (
+				F8877FAA1DF51062008AF751 /* PrefixHeader.pch */,
 				F8877F961DF50FAC008AF751 /* AppDelegate.h */,
 				F8877F971DF50FAC008AF751 /* AppDelegate.m */,
 				F8877F991DF50FAC008AF751 /* ViewController.h */,
 				F8877F9A1DF50FAC008AF751 /* ViewController.m */,
 				F8877F9C1DF50FAC008AF751 /* Main.storyboard */,
+				F8877FAD1DF51738008AF751 /* SingletonTCP.h */,
+				F8877FAE1DF51738008AF751 /* SingletonTCP.m */,
 				F8877F9F1DF50FAC008AF751 /* Assets.xcassets */,
 				F8877FA11DF50FAC008AF751 /* LaunchScreen.storyboard */,
 				F8877FA41DF50FAC008AF751 /* Info.plist */,
 				F8877F931DF50FAC008AF751 /* Supporting Files */,
+				F8877FB01DF540C4008AF751 /* NSString+JsonString.h */,
+				F8877FB11DF540C4008AF751 /* NSString+JsonString.m */,
 			);
 			path = MINAFrameworkOfTCP;
 			sourceTree = "<group>";
@@ -86,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8877FA71DF50FAC008AF751 /* Build configuration list for PBXNativeTarget "MINAFrameworkOfTCP" */;
 			buildPhases = (
+				75843683F312C2FCFB1C1254 /* [CP] Check Pods Manifest.lock */,
 				F8877F8C1DF50FAC008AF751 /* Sources */,
 				F8877F8D1DF50FAC008AF751 /* Frameworks */,
 				F8877F8E1DF50FAC008AF751 /* Resources */,
+				29EA50773FF3C93177322FE0 /* [CP] Embed Pods Frameworks */,
+				06D199931B71649BCA961876 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,11 +182,60 @@
 			files = (
 				F8877FA31DF50FAC008AF751 /* LaunchScreen.storyboard in Resources */,
 				F8877FA01DF50FAC008AF751 /* Assets.xcassets in Resources */,
+				F8877FAC1DF510FB008AF751 /* podFile in Resources */,
 				F8877F9E1DF50FAC008AF751 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06D199931B71649BCA961876 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINAFrameworkOfTCP/Pods-MINAFrameworkOfTCP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29EA50773FF3C93177322FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINAFrameworkOfTCP/Pods-MINAFrameworkOfTCP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75843683F312C2FCFB1C1254 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8877F8C1DF50FAC008AF751 /* Sources */ = {
@@ -153,7 +244,9 @@
 			files = (
 				F8877F9B1DF50FAC008AF751 /* ViewController.m in Sources */,
 				F8877F981DF50FAC008AF751 /* AppDelegate.m in Sources */,
+				F8877FB21DF540C4008AF751 /* NSString+JsonString.m in Sources */,
 				F8877F951DF50FAC008AF751 /* main.m in Sources */,
+				F8877FAF1DF51738008AF751 /* SingletonTCP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +362,11 @@
 		};
 		F8877FA81DF50FAC008AF751 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B340C92B28F445BF5BAEF88 /* Pods-MINAFrameworkOfTCP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FX3328E4WG;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MINAFrameworkOfTCP/PrefixHeader.pch";
 				INFOPLIST_FILE = MINAFrameworkOfTCP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.von.MINAFrameworkOfTCP;
@@ -281,9 +376,11 @@
 		};
 		F8877FA91DF50FAC008AF751 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B73536C69CFBFF05F6B9E41 /* Pods-MINAFrameworkOfTCP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FX3328E4WG;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MINAFrameworkOfTCP/PrefixHeader.pch";
 				INFOPLIST_FILE = MINAFrameworkOfTCP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.von.MINAFrameworkOfTCP;
@@ -310,6 +407,7 @@
 				F8877FA91DF50FAC008AF751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

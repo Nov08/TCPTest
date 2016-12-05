@@ -1,0 +1,20 @@
+PODS:
+  - CocoaAsyncSocket (7.4.2)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - ReactiveCocoa (~> 2.1.8)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+
+PODFILE CHECKSUM: baa5c93345059c2af25b47f2b4685f9ac7bd7377
+
+COCOAPODS: 1.2.0.beta.1
